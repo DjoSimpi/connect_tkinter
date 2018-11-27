@@ -4,7 +4,6 @@ from tkinter import messagebox as ms
 import time
 #Créations des fonctions et test de connexion
 
-
 def login():
     username = "odoo"
     password = "interface"
@@ -35,7 +34,6 @@ def login():
         root.mainloop()
     else:
         ms.showerror('Oops!', 'Username and/or Password Not Found.')
-
 
 #Création de la fenêtre avant de se logger
 #Création des fonctions
