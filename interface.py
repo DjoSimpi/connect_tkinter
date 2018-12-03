@@ -13,6 +13,13 @@ def login():
     password = "interface"
     #On teste les variables de controle pour se connecter
     if usernameInput.get() == username and passwordInput.get() == password:
+        #On efface les champs de connexion
+        entre1.delete(0, END)
+        entre1.insert(0, "")
+        entre2.delete(0, END)
+        entre2.insert(0, "")
+        #---------------------------------
+
         fen1 = Toplevel(root)
         fen1.title("INTERFACE ")
         fen1.geometry("1600x800+0+0")
